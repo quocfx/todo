@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "70004949-f302-45c9-af59-1bc4a4352abc",
+		"name": "LiFung - Todo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12216155"
+	},
+	"item": [
+		{
+			"name": "GetTodoByUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/lf/todo/quoc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lf",
+						"todo",
+						"quoc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"quoc\",\r\n    \"detail\": \"new item 1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/lf/todo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lf",
+						"todo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
